@@ -48,6 +48,16 @@ nav li{
 nav div{
     margin-left: 25px;
 }
+.burger-div{
+    display: none;
+}
+.burger-div div{
+    width: 20px;
+    height: 2px;
+    margin: 5px 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
 .line{
     width: 30px;
     height: 1px;
@@ -69,6 +79,9 @@ nav div{
 .image-2{
     width: 760px;
     margin-left: 25px;
+}
+.down-circle{
+    display: none;
 }
 section{
     padding: 90px 0;
@@ -99,8 +112,6 @@ section{
 }
 .image-services{
     width: 700px;
-    height: 700px;
-    object-fit: cover;
     margin:150px 60px 20px 100px;
     box-shadow: -10px 10px #0A22F4 ;
     border-radius: 20px;
@@ -110,4 +121,52 @@ section{
 }
 .font{
     font-family: "Helvetica Neue LT W01 55 Roman";
+}
+@media(max-width:840px){
+    .nav-list{
+        display: none;
+    }
+    .burger-div{
+        display: inline-block;
+    }
+    .image-1{
+        width: 300px;
+    }
+    .image-2{
+        width: 500px;
+    }
+}
+@media(max-width:500px){
+    .image-1{
+        width: 300px;
+    }
+    .image-2{
+        width: 400px;
+    }
+    .image-cont{
+        flex-wrap: nowrap;
+    }
+}
+@media(max-width:375px){
+    .jc-space-between{
+        justify-content: center;
+    }
+    .image-1{
+        width:200px;
+        margin-left:-120px;
+        margin-top: 0;
+    }
+    .image-2{
+        width: 250px;
+    }
+    .circle-div{
+        display: none;
+    }
+    .down-circle{
+        display: flex;
+        justify-content: center;
+    }
+    .circle{
+        margin: 20px;
+    }
 }
